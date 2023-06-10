@@ -1,0 +1,68 @@
+#!/bin/bash
+
+clear ##############-----clear the terminal-----##############
+echo "#############################################"
+echo "#############-----Update mirrors-----############"
+echo "#############################################"
+arcolinux-get-mirrors --noconfirm ##############-----Alias for Arco = agm-----############
+echo ""
+echo ""
+echo ""
+echo ""
+echo "#############################################"
+echo "#############-----Update all-----############"
+echo "#############################################"
+echo ""
+echo ""
+
+sudo pacman -S archlinux-keyring --noconfirm
+
+echo ""
+echo ""
+
+sudo pacman -Syyu --noconfirm
+
+echo ""
+echo ""
+echo ""
+echo ""
+
+yay -Syu --noconfirm
+
+echo ""
+echo ""
+echo ""
+echo ""
+
+echo "#############################################"
+echo "###########---Updating FlatPack---###########"
+echo "#############################################"
+
+echo ""
+echo ""
+echo ""
+echo ""
+flatpak update
+echo ""
+echo ""
+echo ""
+echo ""
+
+echo "#############################################"
+echo "###########-----Clear the cash-----##########"
+echo "#############################################"
+
+echo ""
+echo ""
+echo ""
+echo ""
+sudo pacman -Sc --noconfirm
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo "#############################################"
+echo "###########-----All Done!!!!!!-----##########"
+echo "#############################################"
+echo ""

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+clear
+echo "Shutting down"
+sleep 1
+poweroff

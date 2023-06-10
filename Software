@@ -1,0 +1,87 @@
+#!/bin/bash
+
+#clear ##############-----clear the terminal-----##############
+echo "#############################################"
+echo "##---install arcolinux-candy-beauty-git---###"
+echo "#############################################"
+
+echo ""
+echo ""
+echo ""
+echo ""
+sudo pacman -S arcolinux-candy-beauty-git
+echo ""
+echo ""
+echo ""
+echo ""
+
+echo "#############################################"
+echo "#######-----install some software-----#######"
+echo "#############################################"
+
+echo ""
+echo ""
+echo ""
+echo ""
+sudo pacman -S --noconfirm --needed sublime-text
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed discord
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed keepassxc
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed dropbox
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed thunderbird
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed firefox
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed simplescreenrecorder
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed timeshift
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed minecraft-launcher 
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed caffeine-ng
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed stacer
+echo "##########################################################"
+sudo pacman -S --noconfirm --needed plank
+sleep 1
+# Now we can copy the file using the 'cp' command
+echo "Now we will copy the autostart-plank using the 'cp' command"
+sleep 1
+cp plank.desktop ~/.config/autostart
+echo "Checking if the copy was successful"
+sleep 1
+# Check if the copy was successful
+if [ $? -eq 0 ]; then
+  echo "File successfully copied"
+else
+  echo "Error copying file"
+fi
+echo "##########################################################"
+
+
+echo ""
+echo ""
+echo ""
+echo ""
+
+echo "#############################################"
+echo "###########-----Clear the cash-----##########"
+echo "#############################################"
+
+echo ""
+echo ""
+echo ""
+echo ""
+sudo pacman -Sc --noconfirm
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo "#############################################"
+echo "###########-----All Done!!!!!!-----##########"
+echo "#############################################"
+echo ""
